@@ -9,11 +9,17 @@ import { routing } from './app.routing';
 import { AuthService } from './auth/auth.service';
 import { AuthGuard } from './auth/auth.guard';
 import { SigninComponent } from './signin/signin.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { CoursesComponent } from './courses/courses.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SigninComponent
+    SigninComponent,
+    HomeComponent,
+    LoginComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,

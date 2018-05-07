@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
+import { CoursesService } from './courses/courses.service';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { CourseDetailComponent } from './course-detail/course-detail.component';
   ],
   providers: [
     AuthGuard,
-    AuthService
+    AuthService,
+    CoursesService
   ],
   bootstrap: [AppComponent]
 })
